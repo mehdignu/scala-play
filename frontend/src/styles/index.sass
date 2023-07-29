@@ -1,0 +1,40 @@
+@import './App'
+@import './fonts'
+@import './mixins/button'
+@import './mixins/atag'
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', 'Helvetica, Arial, sans-serif'
+
+html
+    font-size: 16px
+body
+    display: flex
+    min-width: 320px
+    min-height: 100vh
+#root
+    width: 100%
+    text-align: center
+section
+    padding: 1.5rem
+h1
+    font-size: 1.4rem
+h2
+    font-size: 1.25rem
+h3
+    font-size: 1.2rem
+h4
+    font-size: 1.1rem
+h5
+    font-size: 1.0rem
+h6
+    font-size: 0.9rem
+button
+    @include button
+a
+    @include atag
+ul
+    list-style: none

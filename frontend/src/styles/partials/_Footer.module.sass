@@ -1,0 +1,25 @@
+@use '../colors'
+@import '../mixins/wrapper'
+@import '../mixins/atag'
+@import '../mixins/desktop'
+@import './variables'
+
+footer.footer
+    width: 100%
+    position: fixed
+    bottom: 0
+    @include desktop
+        display: none
+    .wrapper
+        @include wrapper($footerHeight)
+        justify-content: center
+        .list
+            display: flex
+            padding: 0 75px
+            justify-content: space-between
+            column-gap: 5px
+            list-style: none
+            a.footer-link
+                @include atag
+                font-size: 14px
+                text-decoration: underline 1px solid

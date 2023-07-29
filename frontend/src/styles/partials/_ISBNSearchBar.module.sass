@@ -1,0 +1,23 @@
+@import '../colors'
+@import './variables'
+@import '../mixins/desktop'
+
+.isbn-searchbar
+    padding: 1.5rem
+    display: flex
+    flex-direction: column
+    min-width: 320px
+    @include desktop
+        background-color: $gray
+        max-width: 400px
+        height: calc(100vh - $navbarHeight)
+    .list
+        max-height: calc(3 * $searchItemHeight)
+        overflow-y: hidden
+        &.expanded
+            max-height: calc(7 * $searchItemHeight)
+    .button-expand
+        margin-left: auto
+        color: $blue
+        font-size: 1.25rem
+        font-weight: 300

@@ -1,0 +1,18 @@
+@use '../colors'
+@import './variables'
+
+div.search-item
+    height: $searchItemHeight
+    .list-item
+        .link
+            color: $black
+            display: flex
+            justify-content: space-between
+            &.selected
+                color: $lightblue
+            .isbn,
+            .arrow
+                font-size: 22px
+            .isbn
+                font-weight: 500
+                font-family: 'Arial, Helvetica, sans-serifs'

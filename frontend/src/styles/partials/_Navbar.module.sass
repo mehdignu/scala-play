@@ -1,0 +1,20 @@
+@use '../colors'
+@import '../mixins/wrapper'
+@import '../mixins/desktop'
+@import './variables'
+
+nav
+    .wrapper
+        padding: 0px 1.5rem
+        justify-content: space-between
+        @include wrapper($navbarHeight)
+        @include desktop
+            .list
+                display: flex
+                column-gap: 6px
+                font-size: 14px
+                text-decoration: 1px solid underline
+        h2
+            text-align: left
+            font-size: 1.25rem
+            font-weight: 700

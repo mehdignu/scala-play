@@ -1,0 +1,14 @@
+@use '../colors'
+@import './variables'
+
+section.home
+    @include desktop
+        height: calc(100vh - $navbarHeight)
+    margin: auto
+    max-width: 400px
+    p
+        padding: 1rem 0
+        font-size: 14px
+    .home-isbn-search-link
+        font-size: 22px
+        color: $blue

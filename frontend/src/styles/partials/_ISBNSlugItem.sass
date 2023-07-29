@@ -1,0 +1,51 @@
+@use '../colors'
+@import '../mixins/atag'
+@import '../mixins/desktop'
+
+section.book-section
+    @include desktop
+        padding: 2rem 3rem
+    .link
+        margin-bottom: 6px
+        text-align: left
+        font-size: 22px
+        font-weight: 300
+        .back
+            color: $blue
+    .book
+        @include desktop
+            display: flex
+        .cover
+            min-height: 235px
+            display: grid
+            place-content: center
+            .img
+                max-width: 150px
+                @include desktop
+                    max-width: 250px
+        .info
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            row-gap: 20px
+            margin-top: 6px
+            @include desktop
+                padding-top: 2rem
+                padding-left: 2.5rem
+                .title
+                    font-size: 1.25rem
+                    width: 100%
+                    align-items: flex-start
+                    display: flex
+                    flex-direction: column
+            .title
+                align-self: center
+                font-weight: 700
+            .isbn,
+            .appendix
+                font-size: 22px
+                font-weight: 400
+                font-family: 'Times New Roman', sans-serif
+                @include desktop
+                    font-weight: 300
+                    font-size: 20px
