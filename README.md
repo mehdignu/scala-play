@@ -57,4 +57,3 @@ I have replaced `Books.json` with the `BooksContext`
 ---
 
 Remember to run the backend server before the frontend, as the frontend needs to fetch data from the backend.
-# scala-play
